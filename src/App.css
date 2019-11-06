@@ -22,7 +22,44 @@
 }
 
 button {
-  color: black;
+  margin: 15px;
+  color: white;
   background-color: blanchedalmond;
-  border-radius: 4pt;
+  border-radius: 5px;
+  padding: 8pt;
+}
+
+button:hover {
+  color: blanchedalmond;
+}
+
+.background {
+  padding: 10pt;
+}
+
+.QuoteBox {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: slidein 1s ease-out forwards;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
